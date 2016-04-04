@@ -1,0 +1,75 @@
+#weather-next{
+
+	width: 100%;
+	
+    background-color: #DCF9FC;
+    color: #003A40;
+
+	// next 7 days list
+	& > ul {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    align-content: center;
+	    padding: 0px;
+	    margin: 0px;
+
+        border-top-color: #018F9D;
+    	border-top-style: solid;
+    	border-width: 1px 0px 0px 0px;
+
+	    & > li {
+			display: inline-flex;
+			align-items: center;
+			justify-content: space-between;
+			
+			width: 100%;
+			height: 30px;
+
+			border-bottom-color: #018F9D;
+			border-bottom-style: solid;
+			border-width: 0px 0px 1px 0px;
+
+	    	// Temperature info container
+	    	& > div {
+				display: inline-flex;
+				align-items: center;
+				width: 230px;
+				padding-right: 25px;
+	    	}
+
+	    	// Weather Icon
+	    	& img {
+    		    width: 40px;
+    			height: 40px;
+    		    padding-right: 40px;
+	    	}
+
+	    	// Day
+	    	& span:nth-child(1) {
+	   	 		padding-left: 15px;
+	    	}
+
+	    	// Day temperature
+	    	& span:nth-child(2) {
+    		    font-size: 15px;
+		        min-width: 70px;
+	    	}
+
+	    	// Min/Max temperature
+	    	& span:nth-child(3) {
+			    font-size: 11px;
+	    	}
+	    }
+	}
+}
+
+.next-title{
+	width: 100%;
+    background-color: #BBBBBB;
+    border-bottom-color: #636363;
+    border-top-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-bottom-style: solid;
+    border-top-color: #636363;
+}
